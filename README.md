@@ -3,7 +3,9 @@
 Software Engineering Principles I Course Project
 
 Project Name: GPTask
+
 Instructor: Dr. Haipeng Cai
+
 Contributors: Ethan Villalovoz, Roy Zabetski, Bryan Frederickson, Nicholas Santos, Ryan Aloof
 
 Summary:
