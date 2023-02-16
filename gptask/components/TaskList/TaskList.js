@@ -1,14 +1,10 @@
-import TextField from '@mui/material/TextField';
-import Checkbox from '@mui/material/Checkbox';
+import Task from '../Task/Task';
 
 export default function TaskList({ tasks }) {
     return (
-        <div >
+        <div>
             {tasks.map((task) => (
-                <div className="horizontalParent" key={task}>
-                    <Checkbox />
-                    <TextField defaultValue={task} />
-                </div>
+                <Task key={task} task={task}/>
             ))}            
         </div>
     );
