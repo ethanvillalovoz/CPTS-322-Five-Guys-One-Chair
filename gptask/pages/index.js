@@ -14,8 +14,8 @@ export default function Home(props) {
 }
 
 export async function getStaticProps() {
-  // get it from the server?
-  const tasks = ['task 1', 'task 2', 'task 3'];
+  // okay cool... now let's get it from the server?
+  const tasks = Array(50).fill('Task ').map((x, y) => x + (y + 1));
 
   return {
       props: { 
