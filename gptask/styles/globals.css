@@ -95,6 +95,10 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+.container {
+  margin-left: 350px;
+}
+
 a {
   color: inherit;
   text-decoration: none;
