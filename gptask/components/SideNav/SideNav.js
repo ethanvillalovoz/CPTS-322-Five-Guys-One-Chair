@@ -32,7 +32,7 @@ export default function SideNav() {
         </Toolbar>
         <Divider />
         <List>
-          {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text) => (
+          {['MATH 220', 'CptS 260', 'CptS 317', 'CptS 322', 'CptS 499'].map((text) => (
             <ListItem key={text} disablePadding>
               <ListItemButton>
                 <ListItemIcon>
