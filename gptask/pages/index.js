@@ -8,9 +8,10 @@ import TaskList from 'components/TaskList/TaskList';
 import Button from '@mui/material/Button';
 
 export default function Home(props) {
+  // TODO: this isn't going to work right in production since getStaticProps is only called at build time
   const listMapping = new Map(JSON.parse(props.serializedMap));
   const [calendarVisible, setCalendarVisibility] = useState(false);
-  const [selectedList, setSelectedList] = useState(listMapping.keys()[0]);
+  const [selectedList, setSelectedList] = useState(props.initialList);
 
   return (
     <>
@@ -54,10 +55,12 @@ export async function getStaticProps() {
 
   // we have to serialize the Map manually since it's not directly compatible with JSON
   let serializedMap = JSON.stringify(Array.from(listTaskMap.entries()))
+  let initialList = lists[0];
 
   return {
       props: { 
         serializedMap,
+        initialList
       },
   };
 }
