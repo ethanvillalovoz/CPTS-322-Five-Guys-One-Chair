@@ -14,7 +14,7 @@ import { CalendarPicker } from '@mui/x-date-pickers/CalendarPicker';
 // don't change without modifying css "container" class too (in globals.css)
 const drawerWidth = 350;
 
-export default function SideNav() {
+export default function SideNav({ lists, onListSelect }) {
     return (
         <Drawer
         sx={{
@@ -33,8 +33,8 @@ export default function SideNav() {
         </Toolbar>
         <Divider />
         <List>
-          {['MATH 220', 'CptS 260', 'CptS 317', 'CptS 322', 'CptS 499'].map((text) => (
-            <ListItem key={text} disablePadding>
+          {lists.map((text) => (
+            <ListItem key={text} disablePadding onClick={() => onListSelect(text)}>
               <ListItemButton>
                 <ListItemIcon>
                 </ListItemIcon>
