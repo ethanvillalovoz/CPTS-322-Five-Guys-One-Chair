@@ -7,9 +7,16 @@ import SideNav from 'components/SideNav/SideNav';
 import TaskList from 'components/TaskList/TaskList';
 import Button from '@mui/material/Button';
 
+let listMapping = undefined;
+
 export default function Home(props) {
   // TODO: this isn't going to work right in production since getStaticProps is only called at build time
-  const listMapping = new Map(JSON.parse(props.serializedMap));
+  if (listMapping === undefined)
+  {
+    console.log('setting mapping');
+    listMapping  = new Map(JSON.parse(props.serializedMap));
+  }
+  console.log('rendered');  
   const [calendarVisible, setCalendarVisibility] = useState(false);
   const [selectedList, setSelectedList] = useState(props.initialList);
 
@@ -50,7 +57,7 @@ export async function getStaticProps() {
 
   const listTaskMap = new Map();
   lists.forEach(list => {
-      listTaskMap.set(list, Array(50).fill(list + ' ').map((x, y) => x + (y + 1)));
+      listTaskMap.set(list, Array(10).fill(list + ' ').map((x, y) => x + (y + 1)));
   });
 
   // we have to serialize the Map manually since it's not directly compatible with JSON
