@@ -6,6 +6,7 @@ import dayGridPlugin from '@fullcalendar/daygrid' // a plugin!
 import SideNav from 'components/SideNav/SideNav';
 import TaskList from 'components/TaskList/TaskList';
 import Button from '@mui/material/Button';
+import TaskCreator from '@/components/TaskCreator/TaskCreator';
 
 let listMapping = undefined;
 
@@ -24,7 +25,7 @@ export default function Home(props) {
     <>
       <SideNav lists={[...listMapping.keys()]} onListSelect={setSelectedList}></SideNav>
       <main className="container">
-        <Button onClick={() => setCalendarVisibility(visible => !visible)}>Click me!</Button>
+        <Button onClick={() => setCalendarVisibility(visible => !visible)}>Calendar</Button>
         <MainArea calendarVisible={calendarVisible} tasks={listMapping.get(selectedList)}></MainArea>
       </main>
     </>
@@ -46,6 +47,7 @@ function MainArea({ calendarVisible, tasks }) {
     return (
       <>
         <TaskList id="tasklist" tasks={tasks}></TaskList>
+        <TaskCreator></TaskCreator>
       </>
     );
   }

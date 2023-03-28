@@ -1,5 +1,14 @@
+
 .container {
   margin-left: 350px;
+}
+
+.fixedContainerTaskCreator {
+  background-color: white;
+  position: fixed;
+  left:60%;
+  top: 90%;
+  transform: translateX(-50%);
 }
 
 .horizontalParent div {
