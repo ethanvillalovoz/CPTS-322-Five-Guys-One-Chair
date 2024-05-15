@@ -8,7 +8,9 @@ Instructor: Dr. Haipeng Cai
 
 Contributors: Ethan Villalovoz, Roy Zabetski, Bryan Frederickson, Nicholas Santos, Ryan Aloof
 
-Summary: The objective is to develop a software product for individuals looking to organize their tasks. Our group gained inspiration too...
+# Project Description 
+
+The objective is to develop a software product for individuals looking to organize their tasks. Our group gained inspiration too...
 
 Develop a task management app that incorporates ChatGPT and other key features to simplify tasks for the user.
 
