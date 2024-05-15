@@ -1,6 +1,6 @@
-#CPTS_322_PROJECT
+# CPTS_322_PROJECT
 
-Software Engineering Principles I Course Project
+Software Engineering Principles I
 
 Project Name: GPTask
 
