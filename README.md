@@ -27,7 +27,7 @@ The core features of the app are:
     Due Dates
 
 
-# Repository and Installation setup
+# Repository & Installation Setup
 
 - Modify/Install Visual Studio 2022.
 - When installing, install the ".NET Desktop Development" workload.  This will add the required compononents needed to debug WPF applications.
