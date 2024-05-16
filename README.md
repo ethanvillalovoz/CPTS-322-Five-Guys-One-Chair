@@ -75,3 +75,5 @@ Not Implemented.
 ## Time Tracking
 Not Implemented.
 
+## Documentation 
+For this project we have made project milestone reports periodically throughout this course. If you would like to read further on the implementation of our project, please look in the `project_milestone_reports` folder within the repo.
